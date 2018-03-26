@@ -1,0 +1,15 @@
+<project name="AntExample1" default="compile" basedir=".">
+
+<target name="clean">
+<delete dir="classes"/>
+</target>
+
+<target name="init" depends="clean">
+<mkdir dir="classes"/>
+</target>
+
+<target name="compile" depends="init">
+<javac srcdir="src" destdir="classes"/>
+</target>
+
+</project>
